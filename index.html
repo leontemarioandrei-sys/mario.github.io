@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Site-ul meu</title>
+<title>Joc Clicker</title>
 </head>
 <body>
-  <h1>Salut!</h1>
-  <p>Acesta este primul meu site.</p>
+<h1>Jocul Meu</h1>
+
+<p>Scor: <span id="score">0</span></p>
+
+<button onclick="addPoint()">Apasă aici!</button>
+
+<script>
+let score = 0;
+
+function addPoint() {
+    score++;
+    document.getElementById("score").textContent = score;
+}
+</script>
+
 </body>
 </html>
